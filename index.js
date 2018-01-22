@@ -1,20 +1,27 @@
 function shout(string) {
-  return string.toUpperCase()
+   return string.toUpperCase()
+ }
+ 
+ function whisper(string) {
+   return string.toLowerCase()
+ }
+ 
+ function logShout(string) {
+   console.log(string.toUpperCase())
+ }
+ 
+ function logWhisper(string) {
+   console.log(string.toLowerCase())
+ }
+
+function sayHiToGrandma(string) {
+if (string.toLowerCase() === string) {
+  return "I can't hear you!"
 }
-
-function whisper(string) {
-  return string.toLowerCase()
+if (string.toUpperCase() === string) {
+  return "YES INDEED!"
 }
-
-var sayHiToGrandma = hello
-  console.log('sayHiToGrandma')
-  expect(sayHiToGrandma('hello!')).toEqual('I cant hear you!')
+if (string === "I love you, Grandma.") {
+  return "I love you, too."
 }
-
-var sayHiToGrandma = HELLO
-  console.log('sayHiToGrandma')
-  expect(sayHiToGrandma('HELLO!')).toEqual('YES INDEED!')
 }
-
-
-  
